@@ -205,7 +205,7 @@ public final class PCodeUtils {
 ```
 Here I just created a utility class that I'll add to in future posts that will grab the data for the different levels of PCode. I'll likely change this to a basic block-based approach in order to make graph rendering easier down the road, but for now a string will do. Here's the working view:
 
-![A basic PCode view](./assets/images/pcode_basic.png)
+![A basic PCode view](/assets/images/pcode_basic.png)
 
 Check out the [PCodeViewer plugin](https://github.com/bdemick/PCodeViewer) repo for the full source. Stay tuned for part 2 where I'll fumble around trying to make a graph-based view!
 
