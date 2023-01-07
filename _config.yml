@@ -2,3 +2,5 @@ theme: minima
 title: Reversing Junk
 author: Ben Demick
 description: Reversing junk, junk reversing, and opinions about junk.
+minima:
+  skin: dark
