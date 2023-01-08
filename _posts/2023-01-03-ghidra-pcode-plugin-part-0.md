@@ -41,7 +41,7 @@ The primary things needed for a GUI plugin are the `ProgramPlugin` class, which 
 #### ProgramPlugin
 The main job of the `ProgramPlugin` for now is to initialize our provider class and handle events that we care about from the core. I want to render the provider every time a new function is selected, so the `locationChanged` event is what I want to register for. Resources should be cleaned up whenever the program is closed, so `programDeactivated` is another event to handle.
 
-```Java
+``` java
 /**
  * This plugin provides a view into the current function's PCode.
  */
@@ -99,7 +99,7 @@ public class PCodeViewerPlugin extends ProgramPlugin {
 
 #### ComponentProvider
 The `ComponentProvider` implementation is responsible for _providing_ (heh) the bulk of the functionality we need. It handles building the components of the GUI window, and provides the methods to update the view when invoked by the plugin event handler.
-```Java
+``` java
 public class PCodeProvider extends ComponentProviderAdapter {
 
 	private JPanel panel;
@@ -180,7 +180,7 @@ public class PCodeProvider extends ComponentProviderAdapter {
 ### Displaying PCode
 Now that we have our main plugin components up and running, we need to make them actually do something useful beyond render the UI containers. This is a pretty crude approach for the moment, but it gets me to the end of Step 1 in my plan, so I can claim success and get started on Step 2. I'll probably change this to use a basic block-based API when I implement the graph rendering.
 
-```Java
+``` java
 public final class PCodeUtils {
 	private PCodeUtils() {
 		throw new UnsupportedOperationException();
