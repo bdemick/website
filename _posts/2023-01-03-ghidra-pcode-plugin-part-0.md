@@ -41,7 +41,7 @@ The primary things needed for a GUI plugin are the `ProgramPlugin` class, which 
 #### ProgramPlugin
 The main job of the `ProgramPlugin` for now is to initialize our provider class and handle events that we care about from the core. I want to render the provider every time a new function is selected, so the `locationChanged` event is what I want to register for. Resources should be cleaned up whenever the program is closed, so `programDeactivated` is another event to handle.
 
-``` java
+~~~ java
 /**
  * This plugin provides a view into the current function's PCode.
  */
@@ -95,7 +95,7 @@ public class PCodeViewerPlugin extends ProgramPlugin {
 	}
 
 }
-```
+~~~
 
 #### ComponentProvider
 The `ComponentProvider` implementation is responsible for _providing_ (heh) the bulk of the functionality we need. It handles building the components of the GUI window, and provides the methods to update the view when invoked by the plugin event handler.
