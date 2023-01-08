@@ -6,3 +6,5 @@ minima:
   skin: dark
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
