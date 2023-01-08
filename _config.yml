@@ -2,12 +2,11 @@ theme: minima
 title: Reversing Junk
 author: Ben Demick
 description: Reversing junk, junk reversing, and opinions about junk.
-minima:
-  skin: dark
-  social_links:
-    - { platform: twitter, user_url: "https://twitter.com/3pidemix" }
-    - { platform: github, user_url: "https://github.com/bdemick" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/ben-demick"}
+
+twitter_username: 3pidemix
+github_username: bdemick
+linkedin_username: ben-demick
+
 markdown: kramdown
 highlighter: rouge
 kramdown:
