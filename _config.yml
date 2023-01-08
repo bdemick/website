@@ -5,6 +5,6 @@ description: Reversing junk, junk reversing, and opinions about junk.
 minima:
   skin: dark
 markdown: kramdown
-highlighter: rouge
 kramdown:
+  input: GFM
   syntax_highlighter: rouge
